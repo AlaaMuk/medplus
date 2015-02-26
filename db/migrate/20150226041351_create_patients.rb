@@ -7,9 +7,9 @@ class CreatePatients < ActiveRecord::Migration
       t.string :email
       t.integer :age
       t.string :gender
-      t.integer :phoneNumber
+      t.string :phoneNumber
       t.string :emergencyContactName
-      t.integer :emergencyContactNum
+      t.string :emergencyContactNum
       t.text :specialNotes
 
       t.timestamps null: false
