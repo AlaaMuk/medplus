@@ -1,2 +1,8 @@
-<h1> this would be the profile</h1>
-<%= welcom + @username %>
+
+
+<% if current_user.provider %>
+	<%= render "provider" %>
+<% else %>
+	<%= render "individuals" %>
+<% end %>
+>>>>>>> 6d15ea478e0dd883805ca2032b778787b53273eb
