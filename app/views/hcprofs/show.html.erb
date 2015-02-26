@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @hcprof.user %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @hcprof.name %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @hcprof.title %>
+</p>
+
+<p>
+  <strong>Phonenumber:</strong>
+  <%= @hcprof.phoneNumber %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @hcprof.email %>
+</p>
+
+<p>
+  <strong>Shifthours:</strong>
+  <%= @hcprof.shiftHours %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @hcprof.location %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @hcprof.notes %>
+</p>
+
+<%= link_to 'Edit', edit_hcprof_path(@hcprof) %> |
+<%= link_to 'Back', hcprofs_path %>

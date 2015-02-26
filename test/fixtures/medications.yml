@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 
+  patient_id: 
+  hcprof_id: 
+  name: MyString
+  description: MyText
+  quantityMed: 1
+  units: MyString
+  dosage: 1
+  units: MyString
+  taken: false
+  startDate: 2015-02-25 23:17:41
+  endDate: 2015-02-25 23:17:41
+  specialNotes: MyText
+
+two:
+  user_id: 
+  patient_id: 
+  hcprof_id: 
+  name: MyString
+  description: MyText
+  quantityMed: 1
+  units: MyString
+  dosage: 1
+  units: MyString
+  taken: false
+  startDate: 2015-02-25 23:17:41
+  endDate: 2015-02-25 23:17:41
+  specialNotes: MyText

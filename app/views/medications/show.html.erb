@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @medication.user %>
+</p>
+
+<p>
+  <strong>Patient:</strong>
+  <%= @medication.patient %>
+</p>
+
+<p>
+  <strong>Hcprof:</strong>
+  <%= @medication.hcprof %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @medication.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @medication.description %>
+</p>
+
+<p>
+  <strong>Quantitymed:</strong>
+  <%= @medication.quantityMed %>
+</p>
+
+<p>
+  <strong>Units:</strong>
+  <%= @medication.units %>
+</p>
+
+<p>
+  <strong>Dosage:</strong>
+  <%= @medication.dosage %>
+</p>
+
+<p>
+  <strong>Units:</strong>
+  <%= @medication.units %>
+</p>
+
+<p>
+  <strong>Taken:</strong>
+  <%= @medication.taken %>
+</p>
+
+<p>
+  <strong>Startdate:</strong>
+  <%= @medication.startDate %>
+</p>
+
+<p>
+  <strong>Enddate:</strong>
+  <%= @medication.endDate %>
+</p>
+
+<p>
+  <strong>Specialnotes:</strong>
+  <%= @medication.specialNotes %>
+</p>
+
+<%= link_to 'Edit', edit_medication_path(@medication) %> |
+<%= link_to 'Back', medications_path %>

@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Hcprofs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Name</th>
+      <th>Title</th>
+      <th>Phonenumber</th>
+      <th>Email</th>
+      <th>Shifthours</th>
+      <th>Location</th>
+      <th>Notes</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @hcprofs.each do |hcprof| %>
+      <tr>
+        <td><%= hcprof.user %></td>
+        <td><%= hcprof.name %></td>
+        <td><%= hcprof.title %></td>
+        <td><%= hcprof.phoneNumber %></td>
+        <td><%= hcprof.email %></td>
+        <td><%= hcprof.shiftHours %></td>
+        <td><%= hcprof.location %></td>
+        <td><%= hcprof.notes %></td>
+        <td><%= link_to 'Show', hcprof %></td>
+        <td><%= link_to 'Edit', edit_hcprof_path(hcprof) %></td>
+        <td><%= link_to 'Destroy', hcprof, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Hcprof', new_hcprof_path %>
